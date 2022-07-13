@@ -1,0 +1,28 @@
+* ,
+* ::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background-main {
+    width: 100%;
+    height: 75vh;
+    background-image: url(./images/backgroundImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 60px left 50px;
+    background-color: #fff;
+    border-radius: 0 0 0 80px;
+}
+
+.main-header {
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+}
+
+.main-connect {
+    color: #7f8cff
+}
