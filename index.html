@@ -2,157 +2,307 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-    <a class="navbar-brand" href="#">My Logo</a>
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading1">PortFolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading2">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading3">Contact</a>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand logo" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="nav justify-content-end collapse navbar-collapse" id="collapsibleNavbar">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <main>
-      <section class="row background-main">
-        <div class="container main-header">
-          <h1 id="scrollspyHeading1 background-main--heading">Hi We are Developers,<br /> Glad to meet you!</h1>
-          <p>We are software developers! We can help you build a product ,<br /> feature or website Look through some of
-            our
-            work and experience! <br />If you like what you see and have a project you need coded,<br /> don’t hestiate
-            to contact us.
-          </p>
-          <p class="main-connect">Lets Connect</p>
-          <div class="container">
-            <div class="row">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-medium col-1 " viewBox="0 0 16 16">
+      <section class="container-fluid bg-white main-header-section">
+        <div class="container-fluid header-section">
+          <div class="row">
+            <div class="col-md-8 offset-md-2 col-sm-12 d-flex flex-column justify-content-center vh-100">
+              <h1 id="main-header">We are Developers <br> Glad to see you!</h1>
+              <p id="header-description">
+                We are software developers! We can help you build a product , feature or website Look through some of my
+                work and
+                experience! If you like what you see and have a project you need coded, don’t hestiate to contact us.
+              </p>
+              <p class="connect">LET&apos;S CONNECT</p>
+              <div class="list-unstyled d-flex gap-3 socialmedia">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-medium col-1" viewBox="0 0 16 16">
+                  <path
+                    d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-twitter col-1" viewBox="0 0 16 16">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-github col-1" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-linkedin col-1" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-md gap-5 works-section">
+        <div class="card my-5 rounded-4">
+          <div class="card-body row">
+            <div class="col-md-6 col-sm-12">
+              <img class="img-fluid rounded-4" src="images/screenshot2.png" alt="project snapshot">
+            </div>
+            <div class="col-md-6 col-sm-12 py-5">
+              <h2>Tonic</h2>
+              <ul class="list-unstyled d-flex gap-3 align-items-center">
+                <li class="f-title">CANOPY</li>
+                <li class="frame-divider"></li>
+                <li class="frame-role">Back End Dev</li>
+                <li class="frame-divider"></li>
+                <li class="frame-year">2015</li>
+              </ul>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="list-unstyled d-flex gap-2">
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">html</span>
+                </li>
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">css</span>
+                </li>
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">javascript</span>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-outline-primary mt-4">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="card my-5 rounded-4">
+          <div class="card-body row">
+            <div class="col-md-6 col-sm-12 order-md-2">
+              <img class="img-fluid rounded-4" src="images/screenshot3.png" alt="project snapshot">
+            </div>
+            <div class="col-md-6 col-sm-12 py-5 order-md-1">
+              <h2>Tonic</h2>
+              <ul class="list-unstyled d-flex gap-3 ali-gn-items-center">
+                <li class="f-title">CANOPY</li>
+                <li class="frame-divider-right"></li>
+                <li class="frame-role">Back End Dev</li>
+                <li class="frame-divider-right"></li>
+                <li class="frame-year">2015</li>
+              </ul>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="list-unstyled d-flex gap-2">
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">html</span>
+                </li>
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">css</span>
+                </li>
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">javascript</span>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-outline-primary mt-4">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="card my-5 rounded-4">
+          <div class="card-body row">
+            <div class="col-md-6 col-sm-12">
+              <img class="img-fluid rounded-4" src="images/screenshot4.png" alt="project snapshot">
+            </div>
+            <div class="col-md-6 col-sm-12 py-5">
+              <h2>Tonic</h2>
+              <ul class="list-unstyled d-flex gap-3 align-items-center">
+                <li class="f-title">CANOPY</li>
+                <li class="frame-divider"></li>
+                <li class="frame-role">Back End Dev</li>
+                <li class="frame-divider"></li>
+                <li class="frame-year">2015</li>
+              </ul>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="list-unstyled d-flex gap-2">
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">html</span>
+                </li>
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">css</span>
+                </li>
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">javascript</span>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-outline-primary mt-4">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="card my-5 rounded-4">
+          <div class="card-body row">
+            <div class="col-md-6 col-sm-12 order-md-2">
+              <img class="img-fluid rounded-4" src="images/screenshot1.png" alt="project snapshot">
+            </div>
+            <div class="col-md-6 col-sm-12 py-5 order-md-1">
+              <h2>Tonic</h2>
+              <ul class="list-unstyled d-flex gap-3 ali-gn-items-center">
+                <li class="f-title">CANOPY</li>
+                <li class="frame-divider-right"></li>
+                <li class="frame-role">Back End Dev</li>
+                <li class="frame-divider-right"></li>
+                <li class="frame-year">2015</li>
+              </ul>
+              <p>
+                A daily selection of privately personalized reads; no accounts or sign-ups required.
+              </p>
+              <ul class="list-unstyled d-flex gap-2">
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">html</span>
+                </li>
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">css</span>
+                </li>
+                <li>
+                  <span class="badge rounded-pill text-bg-primary px-3">javascript</span>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-outline-primary mt-4">See Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="container-fluid bg-white">
+        <div class="row py-5 d-flex gap-5">
+          <div class="col-md-4 offset-md-2 col-sm-12">
+            <h2 class="about-header mt-5">About<br>Us</h2>
+            <p>
+              Hello we are software developers! we can help you build a product , feature or website Look through some
+              of our work and experience! If you like what you see and have a project you need coded, don’t hesitate to
+              contact us.
+            </p>
+            <p class="connect">LET&apos;S CONNECT</p>
+            <div class="list-unstyled d-flex gap-3 socialmedia">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-medium col-1" viewBox="0 0 16 16">
                 <path
                   d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z" />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                 class="bi bi-twitter col-1" viewBox="0 0 16 16">
                 <path
                   d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                 class="bi bi-github col-1" viewBox="0 0 16 16">
                 <path
                   d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                 class="bi bi-linkedin col-1" viewBox="0 0 16 16">
                 <path
                   d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
               </svg>
             </div>
+            <a href="#" class="btn btn-lg btn-outline-primary mt-4">Get our Resumes</a>
+          </div>
+          <div class="col-md-4 col-sm-12 mt-5">
+            <ul class="list-unstyled ">
+              <li>
+                <a id="languages" class="dropdown-toggle" data-bs-toggle="collapse" href="#collapseExample"
+                  role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Languages
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <ul id="trait" class="list-unstyled d-flex">
+                    <li class="d-flex flex-column gap-2">
+                      <img class="Img" src="images/Ellipse1.png" alt="javaScript icon">
+                      <p>JavaScript</p>
+                    </li>
+                    <li class="d-flex flex-column gap-2">
+                      <img class="Img" src="images/Ellipse1-2.png" alt="javaScript icon">
+                      <p>HTML</p>
+                    </li>
+                    <li class="d-flex flex-column gap-2">
+                      <img class="Img" src="images/Ellipse1-1.png" alt="javaScript icon">
+                      <p>CSS</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a id="frameworks" class="dropdown-toggle" data-bs-toggle="collapse" href="#collapseFrameworks"
+                  role="button" aria-expanded="false" aria-controls="collapseFramework">
+                  Frameworks
+                </a>
+              </li>
+              <li> <a id="frameworks" class="dropdown-toggle" data-bs-toggle="collapse" href="#collapseSkills"
+                  role="button" aria-expanded="false" aria-controls="collapseSkills">
+                  Skills
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-
-      <div class="container">
-        <!-- First Card -->
-        <div class="container">
-          <section class="row">
-            <div class="card mb-3 mx-auto mt-5" style="max-width: 80%;">
-              <div class="row g-0 mt-3 mb-3">
-                <div class="col-md-6">
-                  <img src="/images/screenshot4.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+      <footer class="container-fluid" id="contact">
+        <div class="d-flex flex-column py-5 row contact">
+          <div class="col-md-4 offset-md-4 col-sm-12 text-center">
+            <h2 class="text-white pt-5">Contact us</h2>
+            <p class="text-white py-3">
+              If you have an application you are interested in developing, a feature that you need built or a project
+              that needs
+              coding. We would love to help with it
+            </p>
+            <form action="#" method="post">
+              <div class="mb-4">
+                <label for="exampleFormControlInput1" hidden class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
               </div>
-            </div>
-          </section>
-        </div>
-        <!-- Second Card -->
-        <div class="container">
-          <section class="row">
-            <div class="card mb-3 mx-auto mt-5" style="max-width: 80%;">
-              <div class="row g-0 mt-3 mb-3">
-                <div class="col-md-6">
-                  <img src="/images/screenshot1.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+              <div class="mb-4">
+                <label for="exampleFormControlInput2" hidden class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Email Address">
               </div>
-            </div>
-          </section>
-        </div>
-        <!-- Third Card -->
-        <div class="container">
-          <section class="row">
-            <div class="card mb-3 mx-auto mt-5" style="max-width: 80%;">
-              <div class="row g-0 mt-3 mb-3">
-                <div class="col-md-6">
-                  <img src="/images/screenshot2.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+              <div class="mb-4">
+                <label hidden for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea rows="10" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-            </div>
-          </section>
+              <button type="submit" class="btn btn-lg bg-white text-primary">Get In Touch</button>
+            </form>
+          </div>
         </div>
-        <!-- Fourth Card -->
-        <div class="container">
-          <section class="row">
-            <div class="card mb-3 mx-auto mt-5" style="max-width: 80%;">
-              <div class="row g-0 mt-3 mb-3">
-                <div class="col-md-6">
-                  <img src="/images/screenshot3.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-6">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <section class="row">
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, vitae! Corrupti impedit fugit nulla est
-          nobis? Repudiandae, corrupti. Magni sapiente delectus fugit. Tempora consectetur libero reiciendis ducimus
-          ipsum fugit blanditiis?</p>
-      </section>
+      </footer>
     </main>
   </div>
   <!-- JavaScript Bundle with Popper -->
